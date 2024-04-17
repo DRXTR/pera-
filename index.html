@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Site</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Cor de fundo cinza para o corpo */
+            font-family: Arial, sans-serif; /* Define uma fonte padrão */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove preenchimento padrão */
+        }
+    
+        header {
+            background-color: #333; /* Cor de fundo cinza escuro para o cabeçalho */
+            color: #fff; /* Cor do texto branco para o cabeçalho */
+            padding: 10px; /* Adiciona um espaço interno ao cabeçalho */
+        }
+    
+        nav ul {
+            list-style: none; /* Remove marcadores de lista */
+            margin: 0; /* Remove margem padrão */
+            padding: 0; /* Remove preenchimento padrão */
+        }
+    
+        nav ul li {
+            display: inline; /* Exibe os itens da lista horizontalmente */
+            margin-right: 20px; /* Adiciona um espaço entre os itens */
+        }
+    
+        nav ul li a {
+            color: #fff; /* Cor do texto branco para os links do menu */
+            text-decoration: none; /* Remove sublinhado dos links */
+        }
+    
+        main {
+            padding: 20px; /* Adiciona um espaço interno ao conteúdo principal */
+            margin-bottom: 370px; /* Adiciona um espaço inferior ao conteúdo principal */
+        }
+    
+        section {
+            margin-bottom: 20px; /* Adiciona um espaço entre as seções */
+            padding: 20px; /* Adiciona um espaço interno às seções */
+            background-color: #fff; /* Cor de fundo branca para as seções */
+            border-radius: 5px; /* Adiciona cantos arredondados às seções */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+        }
+
+
+        footer {
+            background-color: #333; /* Cor de fundo cinza escuro para o rodapé */
+            color: #fff; /* Cor do texto branco para o rodapé */
+            padding: 10px; /* Adiciona um espaço interno ao rodapé */
+            text-align: center; /* Alinha o texto ao centro */
+            margin-top: 20px; /* Adiciona um espaço superior ao rodapé */
+        }
+    
+        /* Estilos adicionais específicos para elementos dentro da seção #home */
+        #home {
+            background-color: #f9f9f9; /* Cor de fundo cinza claro para a seção #home */
+            position: relative; /* Defina a posição relativa para que possamos posicionar a imagem absolutamente dentro desta seção */
+        }
+    
+        #home a {
+            color: #333; /* Cor do texto cinza escuro para os links dentro da seção #home */
+        }
+
+        #imagem {
+        position: absolute; /* Posiciona a imagem absolutamente dentro da seção */
+        top: 0; /* Posiciona a imagem no topo da seção */
+        right: 0; /* Posiciona a imagem à direita da seção */
+        max-width: 190px; /* Defina o tamanho máximo da imagem */
+        border-radius: 5px; /* Adiciona cantos arredondados à imagem */
+    }
+    </style>
+    
+    <script>
+        document.addEventListener("keydown", function(event){
+            if(event.ctrlKey && event.key === "w") {
+                window.location.href = '#sobre';
+            }
+            if(event.ctrlKey && event.key === "i") {
+                window.open("https://images.tcdn.com.br/img/img_prod/450860/muda_de_pera_d_agua_ou_europeia_1m_enxertada_676_1_20190611093602.jpg");
+            }
+            if(event.ctrlKey && event.key === "m") {
+                document.getElementById("mensagem").focus();
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Home</h1>
+            <p>Texto descritivo sobre o tema escolhido.</p>
+            <p>Atalhos de teclado: CTRL + W (Sobre), CTRL + I (Imagem), CTRL + M (Mensagem)</p>
+            <img id="imagem" src="https://images.tcdn.com.br/img/img_prod/450860/muda_de_pera_d_agua_ou_europeia_1m_enxertada_676_1_20190611093602.jpg" alt="Muda de pera d'água">
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem aqui">
+            <button>Enviar</button>
+        </section>
+        <section id="contato">
+            <h1>Contato</h1>
+            <!-- Conteúdo de contato -->
+        </section>
+        <section id="sobre">
+            <h1>Sobre</h1>
+            <!-- Conteúdo sobre -->
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Nome e Sobrenome
+    </footer>
+</body>
+</html>
